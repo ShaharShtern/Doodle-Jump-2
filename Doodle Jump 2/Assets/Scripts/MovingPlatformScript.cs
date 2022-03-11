@@ -26,18 +26,18 @@ public class MovingPlatformScript : MonoBehaviour
         //left right movement
         if (direction)
         {
-            transform.Translate(moveSpeed, 0, 0);
+            transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
             moveCounter++;
-            if (moveCounter>moveRange)
+            if (moveCounter>moveRange*Time.deltaTime)
             {
                 direction = false;
             }
         }
         else
         {
-            transform.Translate(-moveSpeed, 0, 0);
+            transform.Translate(-moveSpeed * Time.deltaTime, 0, 0);
             moveCounter--;
-            if (moveCounter<-moveRange)
+            if (moveCounter<-moveRange*Time.deltaTime)
             {
                 direction = true;
             }

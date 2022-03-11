@@ -24,6 +24,6 @@ public class SpikeScript : MonoBehaviour
     }
     private void Update()
     {
-        transform.Rotate(new Vector3(0, 0, rotateSpeed));
+        transform.Rotate(new Vector3(0, 0, rotateSpeed*Time.deltaTime));
     }
 }

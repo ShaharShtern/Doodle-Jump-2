@@ -20,6 +20,11 @@ public class DestroyerScript : MonoBehaviour
             Rigidbody rb = other.GetComponent<Rigidbody>();
             rb.useGravity = false;
             rb.velocity = new Vector3(0, 0, 0);
+            int endScore = other.GetComponent<PlayerStats>().score;
+            if (endScore>PlayerPrefs.GetInt("HighScore"))
+            {
+                PlayerPrefs.SetInt("HighScore", endScore);
+            }
         }
     }
 }

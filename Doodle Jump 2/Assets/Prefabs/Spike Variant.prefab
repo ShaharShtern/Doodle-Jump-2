@@ -25,15 +25,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af2404b71a563c84299ca28b4ee570a9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.7408125
+      value: 10.505257
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af2404b71a563c84299ca28b4ee570a9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.5134382
+      value: -4.562221
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af2404b71a563c84299ca28b4ee570a9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.61455
+      value: 0.298179
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af2404b71a563c84299ca28b4ee570a9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -105,7 +105,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.9335328
+  m_Radius: 0.98
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4084442555022714828
 MonoBehaviour:
@@ -119,5 +119,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcf384d8f2eda7342beb5757af737506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 2
+  rotateSpeed: 80
   lostCanvas: {fileID: 0}

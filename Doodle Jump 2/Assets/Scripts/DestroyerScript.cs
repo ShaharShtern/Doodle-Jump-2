@@ -16,6 +16,10 @@ public class DestroyerScript : MonoBehaviour
         if(other.GetComponent<PlayerMovement>())
         {
             lostCanvas.SetActive(true);
+            other.transform.position = new Vector3(10, 0, 0);
+            Rigidbody rb = other.GetComponent<Rigidbody>();
+            rb.useGravity = false;
+            rb.velocity = new Vector3(0, 0, 0);
         }
     }
 }

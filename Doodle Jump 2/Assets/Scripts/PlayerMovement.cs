@@ -15,11 +15,11 @@ public class PlayerMovement : MonoBehaviour
     {
         //create horizontal movement
         //float that is controlled by player input
-        float horizontalMovement = Input.GetAxis("Horizontal") * movementPower * Time.deltaTime;
+        float horizontalMovement = Input.GetAxis("Horizontal") * movementPower;
         //new vector that is the player's velocity
         Vector3 newMovement = rb.velocity;
         //change x velocity to that of the input
-        newMovement.x = horizontalMovement;
+        newMovement.x = horizontalMovement*Time.deltaTime;
         //assign new velocity to player velocity
         rb.velocity = newMovement;
         //move player to other side when out of bounds

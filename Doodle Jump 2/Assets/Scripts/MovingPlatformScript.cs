@@ -20,8 +20,8 @@ public class MovingPlatformScript : MonoBehaviour
         moveSpeed = Random.Range(moveSpeedMin, moveSpeedMax);
     }
     //test
-    
-    void Update()
+
+    private void FixedUpdate()
     {
         //left right movement
         if (direction)

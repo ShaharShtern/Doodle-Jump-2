@@ -110,6 +110,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpPower: 7.5
   moveCounter: 0
-  moveRange: 2000
-  moveSpeedMax: 4
+  moveRange: 1800
+  moveSpeedMax: 3
   moveSpeedMin: 1

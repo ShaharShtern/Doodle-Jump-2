@@ -19,7 +19,7 @@ public class MovingPlatformScript : MonoBehaviour
         //give each platform random speed
         moveSpeed = Random.Range(moveSpeedMin, moveSpeedMax);
     }
-
+    //test
     
     void Update()
     {

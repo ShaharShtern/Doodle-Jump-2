@@ -20,24 +20,24 @@ public class MovingPlatformScript : MonoBehaviour
         moveSpeed = Random.Range(moveSpeedMin, moveSpeedMax);
     }
     //test
-
+    
     private void FixedUpdate()
     {
         //left right movement
         if (direction)
         {
-            transform.Translate(moveSpeed * Time.deltaTime, 0, 0);
+            transform.Translate(moveSpeed, 0, 0);
             moveCounter++;
-            if (moveCounter>moveRange*Time.deltaTime)
+            if (moveCounter>moveRange)
             {
                 direction = false;
             }
         }
         else
         {
-            transform.Translate(-moveSpeed * Time.deltaTime, 0, 0);
+            transform.Translate(-moveSpeed, 0, 0);
             moveCounter--;
-            if (moveCounter<-moveRange*Time.deltaTime)
+            if (moveCounter<-moveRange)
             {
                 direction = true;
             }

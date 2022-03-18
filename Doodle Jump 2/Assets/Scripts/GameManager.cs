@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
     }
     void CreateCoins()
     {
-        float randX = Random.Range(-platRangeX, platRangeX);
+        float randX = Random.Range(-platRangeX*0.8f, platRangeX*0.8f);
         float randY = Random.Range(coinRangeYmin, coinRangeYmax);
         coinSpawnPosition.x = randX;
         coinSpawnPosition.y += randY;
@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
     }
     void CreateSpike()
     {
-        float randX = Random.Range(-platRangeX, platRangeX);
+        float randX = Random.Range(-platRangeX*0.8f, platRangeX*0.8f);
         float randY = Random.Range(coinRangeYmin, coinRangeYmax);
         spikeSpawnPosition.x = randX;
         spikeSpawnPosition.y += randY;

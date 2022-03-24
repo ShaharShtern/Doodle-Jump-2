@@ -17,9 +17,9 @@ public class CoinScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Hitbox"))
         {
-            other.GetComponent<PlayerStats>().coins += 1;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>().coins += 1;
             Destroy(gameObject);
         }
     }

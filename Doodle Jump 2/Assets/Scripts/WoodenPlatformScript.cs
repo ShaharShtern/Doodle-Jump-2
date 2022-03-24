@@ -26,6 +26,7 @@ public class WoodenPlatformScript : MonoBehaviour
                 Rigidbody rbPlatform = GetComponent<Rigidbody>();
                 //make the platform fall when the player jumps on it
                 rbPlatform.useGravity = true;
+                GetComponent<AudioSource>().Play();
             }
         }
     }

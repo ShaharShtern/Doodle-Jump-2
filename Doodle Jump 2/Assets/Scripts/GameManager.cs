@@ -38,11 +38,16 @@ public class GameManager : MonoBehaviour
         if (playerTransform.position.y>spawnPosition.y -15)
         {
             CreatePlatformsEndgame();
+            
+            
+        }
+        if (playerTransform.position.y>coinSpawnPosition.y -15)
+        { 
             CreateCoins();
-            if (spawnPosition.y>40)
-            {
+        }
+        if (spawnPosition.y>40&&playerTransform.position.y> spikeSpawnPosition.y -15)
+        {
                 CreateSpike();
-            }
         }
     }
     void CreatPlatformsStart()

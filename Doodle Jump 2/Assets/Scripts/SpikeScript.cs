@@ -19,7 +19,8 @@ public class SpikeScript : MonoBehaviour
             Rigidbody rb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>();
             rb.velocity = new Vector3(rb.velocity.x / 2, rb.velocity.y, rb.velocity.z);
             //change player tag so they dont jump on platforms once dead
-            other.gameObject.tag = "Dead";
+            GameObject.FindGameObjectWithTag("Player").tag = "Dead";
+            GetComponent<AudioSource>().Play();
         }
     }
     private void Update()

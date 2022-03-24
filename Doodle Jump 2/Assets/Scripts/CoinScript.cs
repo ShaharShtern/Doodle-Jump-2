@@ -7,7 +7,7 @@ public class CoinScript : MonoBehaviour
     public float rotateSpeed;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -19,6 +19,7 @@ public class CoinScript : MonoBehaviour
     {
         if (other.CompareTag("Hitbox"))
         {
+            other.GetComponent<AudioSource>().Play();
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>().coins += 1;
             Destroy(gameObject);
         }

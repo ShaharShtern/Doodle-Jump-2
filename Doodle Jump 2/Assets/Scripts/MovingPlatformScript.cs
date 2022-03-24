@@ -52,6 +52,7 @@ public class MovingPlatformScript : MonoBehaviour
             if (rb.velocity.y < 0)
             {
                 rb.velocity = new Vector3(rb.velocity.x, jumpPower, rb.velocity.z);
+                GetComponent<AudioSource>().Play();
             }
         }
     }

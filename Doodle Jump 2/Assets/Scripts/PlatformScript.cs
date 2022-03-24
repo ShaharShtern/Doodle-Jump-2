@@ -23,8 +23,10 @@ public class PlatformScript : MonoBehaviour
             Rigidbody rb = other.GetComponent<Rigidbody>();
             if (rb.velocity.y <0)
             {
-                rb.velocity = new Vector3(rb.velocity.x, jumpPower, rb.velocity.z);
+                rb.velocity = new Vector3(rb.velocity.x, jumpPower, rb.velocity.z); 
+                GetComponent<AudioSource>().Play();
             }
+           
         }
     }
 }
